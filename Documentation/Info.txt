@@ -1,0 +1,45 @@
+ForumsIcons
+Icons in the forums
+Author: Edson Ordaz
+Submitted: 23rd December 2010
+Last Updated: 27th April 2011
+
+* 11/29/2016 - Updated to version 1.2 for MyBB 1.8.x usage by: vintagedaddyo
+
+
+English:
+
+ForumsIcons it does is put icons to the forums!
+
+from admin panel and e-forums and there forumsicons enter and set up icons for your forums!
+
+which is functioning properly to create a folder in your root of your forum called 
+
+"Forum_Icons"
+
+and ready ForumsIcons enjoy!
+
+Spanish:
+
+ForumsIcons lo que hace es poner iconos a los foros!
+
+desde panel de administracion-foros y mensajes ingresa a forumsicons y ahi configura y sube los iconos para tus foros!
+
+para que fucione correctamente crea una carpeta en tu raiz de tu foro llamada
+
+
+"Forum_Icons"
+
+
+y listo disfruta ForumsIcons!
+Saludos!!!
+
+
+Included Language files:
+
+German (informal)
+persian
+English
+Espanol
+farsi(فارسی)
+
