@@ -110,6 +110,8 @@ function ForumsIcons_admin()
 	// add $cp_style
 	global $mybb, $db, $page, $lang, $cache, $cp_style;
 
+    $lang->load("forum_icons");
+
 	if($page->active_action != $lang->url)
 	{
 		return;
@@ -126,7 +128,7 @@ function ForumsIcons_admin()
 if($mybb->input['action'] == "edit") {
 	$form = new Form("index.php?module=forum/".$lang->url."&amp;action=save", "post", "save",1);
 	echo $form->generate_hidden_field("fid", $mybb->input['fid']);
-	$form_container = new FormContainer("Cargar icono para el foro ".$forum_cache[$mybb->input['fid']]['name']);
+	$form_container = new FormContainer(''.$lang->forums_container.''.$forum_cache[$mybb->input['fid']]['name']);
 
 	$form_container->output_row($lang->icon, $lang->icon_des, $form->generate_file_upload_box("upload_icon", array('style' => 'width: 230px;')), 'file');
 	$form_container->output_row($lang->used_icon, $lang->used_des, "{$img}".$forum_cache[$mybb->input['fid']]['icon']."\" >", 'icon');

@@ -10,7 +10,7 @@
  *
  * Plugin Version: 1.3
  * 
- * Language: English
+ * Language: EnglishGB
  *
  */
 

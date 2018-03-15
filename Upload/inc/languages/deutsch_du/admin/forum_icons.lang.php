@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.2
+ * Plugin Version: 1.3
  * 
  * Language: German
  *
@@ -21,7 +21,7 @@ $l['forums_icons_Desc'] = 'Add Icons to your Forums.';
 $l['forums_icons_Web'] = 'http://community.mybb.com/user-6029.html';
 $l['forums_icons_Auth'] = 'Edson Ordaz & updated by Vintagedaddyo';
 $l['forums_icons_AuthSite'] = 'http://community.mybb.com/user-6029.html';
-$l['forums_icons_Ver'] = '1.2';
+$l['forums_icons_Ver'] = '1.3';
 $l['forums_icons_Compat'] = '18*';
 
 $l['name'] = "Forum Icons";
@@ -41,4 +41,6 @@ $l['delete_onclick'] = "Icon f&uuml;r dieses Forum entfernen?";
 $l['no_file'] = "Fehler beim laden der Datei. Die Endung wird nicht unterst&uuml;tzt.";
 $l['no_file_again'] = "Fehler beim Laden des Icons. Bitte versuche es erneut.";
 $l['file_success'] = "Icon erfolgreich gespeichert";
+
+$l['form_container'] = "Upload-Symbol für das Forum";
 ?>

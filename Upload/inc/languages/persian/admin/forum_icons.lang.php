@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.2
+ * Plugin Version: 1.3
  * 
  * Language: Persian
  *
@@ -21,7 +21,7 @@ $l['forums_icons_Desc'] = 'Add Icons to your Forums.';
 $l['forums_icons_Web'] = 'http://community.mybb.com/user-6029.html';
 $l['forums_icons_Auth'] = 'Edson Ordaz & updated by Vintagedaddyo';
 $l['forums_icons_AuthSite'] = 'http://community.mybb.com/user-6029.html';
-$l['forums_icons_Ver'] = '1.2';
+$l['forums_icons_Ver'] = '1.3';
 $l['forums_icons_Compat'] = '18*';
 
 $l['name'] = "آیکن انجمن";
@@ -41,4 +41,6 @@ $l['delete_onclick'] = "حذف آیکون برای این انجمن?";
 $l['no_file'] = "خطا در بارگذاری فایل، پسوند مجاز نیست";
 $l['no_file_again'] = "خطا در بارگذاری شده، دوباره سعی کنید";
 $l['file_success'] = "آیکون با موفقیت ذخیره شد";
+
+$l['form_container'] = "نماد آپلود برای این انجمن";
 ?>
