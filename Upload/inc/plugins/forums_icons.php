@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.4
+ * Plugin Version: 1.2
  * 
  */
 
@@ -214,7 +214,7 @@ if($mybb->input['action'] == "delete")
 		{
 			$db->query("UPDATE mybb_forums set icon='' where fid='{$forum['fid']}'");
 			$cache->update_forums();
-			flash_message($lang->forums_icons_saved, 'success');
+			flash_message($lang->forums_icons_deleted, 'success');
 			admin_redirect("index.php?module=forum-".$lang->forums_icons_url_2);
 		}
 		else

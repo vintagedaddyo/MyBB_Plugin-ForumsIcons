@@ -47,5 +47,5 @@ $l['forums_icons_form_container'] = "Upload icon for the forum";
 
 $l['forums_icons_edit'] = "Edit";
 $l['forums_icons_delete'] = "Delete";
-
+$l['forums_icons_deleted'] = "Icon deleted successfully";
 ?>

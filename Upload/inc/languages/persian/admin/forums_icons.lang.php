@@ -47,5 +47,5 @@ $l['forums_icons_form_container'] = "نماد آپلود برای این انج�
 
 $l['forums_icons_edit'] = "ویرایش";
 $l['forums_icons_delete'] = "حذف";
-
+$l['forums_icons_deleted'] = "نماد با موفقیت حذف شد";
 ?>

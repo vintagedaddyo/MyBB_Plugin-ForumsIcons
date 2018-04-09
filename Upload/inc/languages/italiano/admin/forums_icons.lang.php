@@ -47,5 +47,5 @@ $l['forums_icons_form_container'] = "Carica icona per il forum";
 
 $l['forums_icons_edit'] = "Modificare";
 $l['forums_icons_delete'] = "Elimina";
-
+$l['forums_icons_deleted'] = "Icona cancellata con successo";
 ?>

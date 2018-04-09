@@ -47,5 +47,5 @@ $l['forums_icons_form_container'] = "Icône de téléchargement pour le forum";
 
 $l['forums_icons_edit'] = "Modifier";
 $l['forums_icons_delete'] = "Effacer";
-
+$l['forums_icons_deleted'] = "Icône supprimée avec succès";
 ?>

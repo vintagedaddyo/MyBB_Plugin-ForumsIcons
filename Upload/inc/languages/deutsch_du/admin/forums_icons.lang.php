@@ -47,4 +47,5 @@ $l['forums_icons_form_container'] = "Upload-Symbol f&‌uuml;r das Forum";
 
 $l['forums_icons_edit'] = "Bearbeiten";
 $l['forums_icons_delete'] = "L&‌ouml;schen";
+$l['forums_icons_deleted'] = "Symbol wurde erfolgreich gel&‌ouml;scht";
 ?>
