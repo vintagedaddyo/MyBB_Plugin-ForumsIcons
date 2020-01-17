@@ -52,10 +52,10 @@ function forums_icons_activate()
 	require_once MYBB_ROOT."inc/adminfunctions_templates.php"; 
 	find_replace_templatesets("forumbit_depth1_cat", "#".preg_quote("<td class=\"thead{\$expthead}\" colspan=\"5\">")."#i", "<td class=\"thead{\$expthead}\" colspan=\"6\">");
 	find_replace_templatesets("forumbit_depth1_cat", "#".preg_quote("<td class=\"tcat\" colspan=\"2\">")."#i", "<td class=\"tcat\" colspan=\"3\">");
-	find_replace_templatesets("forumbit_depth2_forum", "#".preg_quote(" id=\"mark_read_{\$forum['fid']}\"></span></td>")."#i", " id=\"mark_read_{\$forum['fid']}\"></span></td><td class=\"{\$bgcolor}\" align=\"center\" valign=\"top\" width=\"1\"><img src=\"forums_icons/{\$forum['icon']}\" alt=\"{\$forum['name']}\" /></td>");
+	find_replace_templatesets("forumbit_depth2_forum", "#".preg_quote(" id=\"mark_read_{\$forum['fid']}\"></span></td>")."#i", " id=\"mark_read_{\$forum['fid']}\"></span></td><td class=\"{\$bgcolor}\" align=\"center\" valign=\"top\" width=\"1\"><img src=\"forums_icons/{\$forum['icon']}\" onerror=\"this.style.display = 'none';\" alt=\"{\$forum['name']}\" /></td>");
 	find_replace_templatesets("forumdisplay_subforums", "#".preg_quote("colspan=\"5\"")."#i", "colspan=\"6\"");
 	find_replace_templatesets("forumdisplay_subforums", "#".preg_quote("<td class=\"tcat\" width=\"2%\">&nbsp;</td>")."#i", "<td class=\"tcat\" width=\"2%\">&nbsp;</td><td class=\"tcat\" width=\"2%\">&nbsp;</td>");
-	find_replace_templatesets("forumbit_depth2_cat", "#".preg_quote("<td class=\"{\$bgcolor}\" valign=\"top\">")."#i", "<td class=\"{\$bgcolor}\" align=\"center\" valign=\"top\" width=\"1\"><img src=\"forums_icons/{\$forum['icon']}\" alt=\"{\$forum['name']}\" /></td><td class=\"{\$bgcolor}\" valign=\"top\">");
+	find_replace_templatesets("forumbit_depth2_cat", "#".preg_quote("<td class=\"{\$bgcolor}\" valign=\"top\">")."#i", "<td class=\"{\$bgcolor}\" align=\"center\" valign=\"top\" width=\"1\"><img src=\"forums_icons/{\$forum['icon']}\" onerror=\"this.style.display = 'none';\" alt=\"{\$forum['name']}\" /></td><td class=\"{\$bgcolor}\" valign=\"top\">");
 	$cache->update_forums();
 }
 
@@ -65,12 +65,12 @@ function forums_icons_deactivate()
 
 // Remove
 	require_once MYBB_ROOT."inc/adminfunctions_templates.php"; 
-	find_replace_templatesets("forumbit_depth1_cat", '#'.preg_quote('<td class="thead" colspan="6">').'#', '<td class="thead" colspan="5">',0);
+	find_replace_templatesets("forumbit_depth1_cat", '#'.preg_quote('<td class="thead{$expthead}" colspan="6">').'#', '<td class="thead{$expthead}" colspan="5">',0);
 	find_replace_templatesets("forumbit_depth1_cat", '#'.preg_quote('<td class="tcat" colspan="3">').'#', '<td class="tcat" colspan="2">',0);
-	find_replace_templatesets("forumbit_depth2_forum", '#'.preg_quote('<td class="{$bgcolor}" align="center" valign="top" width="1"><img src="forums_icons/{$forum[\'icon\']}" alt="{$forum[\'name\']}" /></td>').'#', '',0);
+	find_replace_templatesets("forumbit_depth2_forum", '#'.preg_quote('<td class="{$bgcolor}" align="center" valign="top" width="1"><img src="forums_icons/{$forum[\'icon\']}" onerror="this.style.display = \'none\';" alt="{$forum[\'name\']}" /></td>').'#', '',0);
 	find_replace_templatesets("forumdisplay_subforums", '#'.preg_quote('colspan="6"').'#', 'colspan="5"',0);
 	find_replace_templatesets("forumdisplay_subforums", '#'.preg_quote('<td class="tcat" width="2%">&nbsp;</td><td class="tcat" width="2%">&nbsp;</td>').'#', '<td class="tcat" width="2%">&nbsp;</td>',0);
-	find_replace_templatesets("forumbit_depth2_cat", '#'.preg_quote('<td class="{$bgcolor}" align="center" valign="top" width="1"><img src="forums_icons/{$forum[\'icon\']}" alt="{$forum[\'name\']}" /></td>').'#', '',0);
+	find_replace_templatesets("forumbit_depth2_cat", '#'.preg_quote('<td class="{$bgcolor}" align="center" valign="top" width="1"><img src="forums_icons/{$forum[\'icon\']}" onerror="this.style.display = \'none\';" alt="{$forum[\'name\']}" /></td>').'#', '',0);
     $db->query("ALTER TABLE ".TABLE_PREFIX."forums DROP `icon`");
 	$cache->update_forums();
 }
